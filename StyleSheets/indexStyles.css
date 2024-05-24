@@ -1,0 +1,47 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+  padding-top: 80px; /* Space for nav */
+}
+
+#demo .carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for better visibility */
+  color: white; /* Ensures text is bright and visible */
+  padding: 10px; /* Adds space around the text */
+  border-radius: 5px; /* Softens the edges of the caption background */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: none;
+  height: 10vh;
+  width: 5%;
+  text-align: center;
+  margin: auto;
+}
+
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: none;
+  width: 50%;
+  margin: auto;
+}

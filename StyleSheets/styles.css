@@ -1,0 +1,132 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  background-color: none;
+  color: black;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.fa-brands {
+  color: black;
+}
+
+.navbar-brand {
+  display: flex; /* Sets the layout to Flexbox */
+  align-items: bottom; /* Centers items vertically */
+  gap: 0.1em; /* Optional: adds space between the icon and the text */
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+
+.navbar-brand i {
+  font-size: 1.2em; /* Adjust the icon size as needed */
+}
+
+#dropdownMenuButton {
+  border: none;
+  background: none; /* Transparent background */
+  color: black;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.2rem;
+  font-family: monospace;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1rem;
+}
+.nav-link:hover {
+  color: gray;
+}
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Modal Styles */
+.navbarmodal .modal-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Dark background */
+  color: black; /* White text color */
+}
+
+.navbarmodal .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 1rem;
+}
+
+.navbarmodal .modal-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center; /* Center align the list items */
+}
+
+.navbarmodal .modal-body ul li {
+  margin: auto;
+}
+
+.navbarmodal .modal-body ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbarmodal .modal-header {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  border-bottom: none;
+}
+
+/* Custom dropdown menu alignment */
+.dropdown-menu[data-bs-popper] {
+  top: 80%;
+  left: auto;
+}
